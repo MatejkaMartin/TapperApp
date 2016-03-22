@@ -403,6 +403,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.martinmatejka2.TapperApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -414,6 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.martinmatejka2.TapperApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +484,7 @@
 				EAD838B11C8C404E005E8937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAD838B21C8C404E005E8937 /* Build configuration list for PBXNativeTarget "TapperAppTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +493,7 @@
 				EAD838B41C8C404E005E8937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAD838B51C8C404E005E8937 /* Build configuration list for PBXNativeTarget "TapperAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +502,7 @@
 				EAD838B71C8C404E005E8937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

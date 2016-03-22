@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapperApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,110 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="10958-NN4QZ2" translatesAutoresizingMaskIntoConstraints="NO" id="7ma-uG-vTn" userLabel="pozadi">
+                                <rect key="frame" x="-165" y="-121" width="930" height="732"/>
+                                <color key="backgroundColor" red="0.82436793990000001" green="1" blue="0.37242654759999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="TAPPER-2" translatesAutoresizingMaskIntoConstraints="NO" id="8eo-au-2al" userLabel="nadpis">
+                                <rect key="frame" x="156" y="52" width="264" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="264" id="9A2-KJ-47y"/>
+                                    <constraint firstAttribute="height" constant="88" id="In4-ie-tg0"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kolik kliků vyhraje ?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-rE-LfK" userLabel="pocetKlikuTF">
+                                <rect key="frame" x="201" y="218" width="178" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="148-3k-gWv"/>
+                                    <constraint firstAttribute="width" constant="178" id="tPM-KK-dEj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-I6-uXM" userLabel="klikaciTlacitko">
+                                <rect key="frame" x="69" y="351" width="442" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="AIw-hm-XdY"/>
+                                    <constraint firstAttribute="width" constant="442" id="WiE-23-Mfb"/>
+                                </constraints>
+                                <state key="normal" image="symbol"/>
+                                <connections>
+                                    <action selector="onKlikacJeZmacknut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPd-Xt-g7V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czl-uS-dgs">
+                                <rect key="frame" x="89" y="112" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100 Taps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9y-Hy-XVt" userLabel="pocitadloL">
+                                <rect key="frame" x="269" y="222" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ay-Uu-xq9">
+                                <rect key="frame" x="102" y="122" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hse-ZV-aT1" userLabel="startB">
+                                <rect key="frame" x="172" y="274" width="257" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="Tjc-NV-I8A"/>
+                                    <constraint firstAttribute="width" constant="257" id="p3J-4s-aZy"/>
+                                </constraints>
+                                <state key="normal" image="symbol (kopie)"/>
+                                <connections>
+                                    <action selector="onPlayBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7W-XW-VQJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kZO-I6-uXM" firstAttribute="top" secondItem="lLz-rE-LfK" secondAttribute="bottom" constant="103" id="0c8-fQ-l2p"/>
+                            <constraint firstItem="k9y-Hy-XVt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dE-fj-x4h"/>
+                            <constraint firstItem="k9y-Hy-XVt" firstAttribute="top" secondItem="8eo-au-2al" secondAttribute="bottom" constant="82" id="7bh-qa-50w"/>
+                            <constraint firstAttribute="trailing" secondItem="7ma-uG-vTn" secondAttribute="trailing" id="FEi-1B-xXT"/>
+                            <constraint firstItem="hse-ZV-aT1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M5S-AS-UPZ"/>
+                            <constraint firstItem="hse-ZV-aT1" firstAttribute="top" secondItem="lLz-rE-LfK" secondAttribute="bottom" constant="26" id="SAI-oz-T94"/>
+                            <constraint firstItem="kZO-I6-uXM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="TJ2-3A-ni6"/>
+                            <constraint firstItem="lLz-rE-LfK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJm-jo-EVp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hse-ZV-aT1" secondAttribute="bottom" constant="113" id="TKO-gZ-Q3N"/>
+                            <constraint firstItem="8eo-au-2al" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="bIE-Xk-XEf"/>
+                            <constraint firstItem="kZO-I6-uXM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jkO-4Q-Mgp"/>
+                            <constraint firstItem="7ma-uG-vTn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mnN-5a-Jlf"/>
+                            <constraint firstItem="k9y-Hy-XVt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oBy-vY-W1A"/>
+                            <constraint firstItem="7ma-uG-vTn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r1T-wZ-faq"/>
+                            <constraint firstAttribute="bottom" secondItem="7ma-uG-vTn" secondAttribute="bottom" id="wC0-GY-KBL"/>
+                            <constraint firstItem="8eo-au-2al" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wyr-Ht-Vxs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Czl-uS-dgs"/>
+                                <exclude reference="1ay-Uu-xq9"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="TJ2-3A-ni6"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="howManyTapsTxt" destination="lLz-rE-LfK" id="LCU-5b-ZIV"/>
+                        <outlet property="nadpisImg" destination="8eo-au-2al" id="mPC-y0-lKW"/>
+                        <outlet property="playBtn" destination="hse-ZV-aT1" id="Ju7-j8-WiB"/>
+                        <outlet property="tapBtn" destination="kZO-I6-uXM" id="zr5-Qb-fnb"/>
+                        <outlet property="tapsLbl" destination="k9y-Hy-XVt" id="OOQ-8i-KzW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10958-NN4QZ2" width="1667" height="1667"/>
+        <image name="TAPPER-2" width="378" height="94"/>
+        <image name="symbol" width="64" height="64"/>
+        <image name="symbol (kopie)" width="256" height="256"/>
+    </resources>
 </document>
