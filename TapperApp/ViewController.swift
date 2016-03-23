@@ -34,6 +34,14 @@ class ViewController: UIViewController {
         
         
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
     @IBAction func onPlayBtnPressed(sender: UIButton!){
        
         
@@ -48,6 +56,7 @@ class ViewController: UIViewController {
             maxTaps = Int(howManyTapsTxt.text!)!
             currentTaps = 0
             updateTapsLabel()
+            
             
             
         }
@@ -76,5 +85,9 @@ class ViewController: UIViewController {
         tapsLbl.hidden = true
         tapBtn.hidden = true
         
+    }
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }
