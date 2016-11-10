@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var maxTaps: Int = 0
     var currentTaps: Int = 0
     
-    @IBAction func onKlikacJeZmacknut(sender: UIButton!)
+    @IBAction func onKlikacJeZmacknut(_ sender: UIButton!)
     {
         currentTaps += 1
         updateTapsLabel()
@@ -42,16 +42,16 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
-    @IBAction func onPlayBtnPressed(sender: UIButton!){
+    @IBAction func onPlayBtnPressed(_ sender: UIButton!){
        
         
         if howManyTapsTxt.text != nil && howManyTapsTxt.text != "" {
-            nadpisImg.hidden = true
-            playBtn.hidden = true
-            howManyTapsTxt.hidden = true
+            nadpisImg.isHidden = true
+            playBtn.isHidden = true
+            howManyTapsTxt.isHidden = true
             
-            tapBtn.hidden = false
-            tapsLbl.hidden = false
+            tapBtn.isHidden = false
+            tapsLbl.isHidden = false
             
             maxTaps = Int(howManyTapsTxt.text!)!
             currentTaps = 0
@@ -78,12 +78,12 @@ class ViewController: UIViewController {
     func restartGame() {
         maxTaps = 0
         howManyTapsTxt.text = ""
-        nadpisImg.hidden = false
-        playBtn.hidden = false
-        howManyTapsTxt.hidden = false
+        nadpisImg.isHidden = false
+        playBtn.isHidden = false
+        howManyTapsTxt.isHidden = false
         
-        tapsLbl.hidden = true
-        tapBtn.hidden = true
+        tapsLbl.isHidden = true
+        tapBtn.isHidden = true
         
     }
     func dismissKeyboard() {
